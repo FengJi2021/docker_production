@@ -1,5 +1,9 @@
 version: '3'
-services: 
+services:
+  my_app:
+    image: my_app_server:1.0
+    port:
+      - 3000:3000
   mongodb:
     image: mongo
     ports:
